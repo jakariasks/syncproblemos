@@ -4,7 +4,6 @@ import ProducerConsumer from './components/ProducerConsumer.jsx'
 import ReadersWriters from './components/ReadersWriters.jsx'
 import DiningPhilosophers from './components/DiningPhilosophers.jsx'
 import TheoryReport from './components/TheoryReport.jsx'
-import Footer from './components/Footer.jsx'
 
 const tabs = [
   {
@@ -44,7 +43,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <header className="border-b border-slate-800 bg-slate-950/95 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-4 py-5">
+        <div className="mx-auto max-w-[1500px] px-3 py-3">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex items-center gap-3">
               <div className="rounded-2xl bg-cyan-500/15 p-3 text-cyan-300 ring-1 ring-cyan-400/30">
@@ -52,18 +51,18 @@ export default function App() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold tracking-tight md:text-3xl">
-                  Process Synchronization Visualizer
+                  Process Synchronization Visualizer Dynamic
                 </h1>
                 <p className="mt-1 max-w-3xl text-sm text-slate-400">
                   Interactive web app for Producer-Consumer, Readers-Writers, and Dining Philosophers.
-                  Includes manual mode, auto mode, theory, algorithm highlight, waiting queues, safe/unsafe deadlock demo.
+                  Includes manual mode, auto mode, theory, algorithm highlight, waiting queues, safe/unsafe deadlock demo, and report export.
                 </p>
               </div>
             </div>
 
             <div className="rounded-2xl border border-slate-800 bg-slate-900 px-4 py-3 text-sm text-slate-300">
-              <div className="font-semibold text-cyan-300">Developed By </div>
-              <div className="mt-1">Jakaria Hasan CSE 15</div>
+              <div className="font-semibold text-cyan-300">Stack</div>
+              <div className="mt-1">React + Vite + JavaScript + Tailwind CSS</div>
             </div>
           </div>
 
@@ -95,17 +94,15 @@ export default function App() {
             <span>{active.title}</span>{' '}
             <span className="mx-2 text-slate-600">|</span>
             <span className="text-slate-400">
-              Use <b className="text-slate-200">Manual Mode</b> for presentation and <b className="text-slate-200">Auto Mode</b> for live animation.
+              Use <b className="text-slate-200">Manual Mode</b> for viva/presentation and <b className="text-slate-200">Auto Mode</b> for live animation.
             </span>
           </div>
         </div>
       </header>
 
-       <main className="mx-auto max-w-7xl px-4 py-6">
+      <main className="mx-auto max-w-[1500px] px-3 py-3">
         <ActiveComponent />
       </main>
-
-      <Footer />
     </div>
   )
 }

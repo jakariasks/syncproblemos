@@ -1,47 +1,41 @@
-# Process Synchronization Visualizer Pro (V3)
+# Process Synchronization Visualizer Dynamic V5
 
-A complete React + Vite + JavaScript + Tailwind CSS web app for visualizing:
+A React + Vite + JavaScript + Tailwind CSS web app for dynamically visualizing:
 
 1. Producer-Consumer / Bounded Buffer
 2. Readers-Writers
 3. Dining Philosophers
-4. Theory & Report tab
+4. Theory & Report
 
-## Added Features in V3
+## Main Fixes
 
-- Algorithm step highlight
-- Manual mode and Auto mode
-- Waiting queue panels
-- Dining Philosophers Safe Mode and Unsafe Mode
-- Theory/Report tab inside app
-- Export Report button
-- Print View button
-- Better UI labels:
-  - Critical Section
-  - Shared Resource
-  - Blocked State
-  - Safe State
-  - Deadlock Risk
+### Producer-Consumer
+- Multiple producers
+- Multiple consumers
+- Random producer/consumer arrival
+- Buffer full situation handled
+- Buffer empty situation handled
+- Producer and consumer waiting queues
 
-## Run on Windows
+### Readers-Writers
+- Random reader/writer arrival
+- Multiple readers can read together
+- Writer gets exclusive access
+- Reader and writer waiting queues
+- Fair mode added
+
+### Dining Philosophers
+- Uses chopstick terminology instead of fork
+- Random philosopher selection
+- Multiple non-neighbor philosophers can eat together
+- Philosopher can eat only if both chopsticks are free
+- Unsafe deadlock demo retained
+
+## Run
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open the local URL shown in terminal, usually:
-
-```text
-http://localhost:5173
-```
-
-## Best Presentation Flow
-
-1. Use Manual Mode
-2. Click Start
-3. Click Next Step
-4. Explain Current Step + Algorithm Highlight
-5. Show Waiting Queue + Properties
-6. In Dining Philosophers, first show Unsafe Mode, then Safe Mode
-7. Use Export Report for assignment text or Print View for documentation
+Open the local URL shown in terminal.

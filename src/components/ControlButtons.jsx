@@ -27,7 +27,7 @@ export default function ControlButtons({
         type="button"
         onClick={onStart}
         disabled={running}
-        className="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-4 py-2 text-sm font-bold text-emerald-950 transition hover:bg-emerald-400 disabled:cursor-not-allowed disabled:opacity-50"
+        className="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-3 py-1.5 text-xs font-bold text-emerald-950 transition hover:bg-emerald-400 disabled:cursor-not-allowed disabled:opacity-50"
       >
         <Play size={17} />
         Start
@@ -38,7 +38,7 @@ export default function ControlButtons({
           type="button"
           onClick={onResume}
           disabled={!running || mode === 'manual'}
-          className="inline-flex items-center gap-2 rounded-xl bg-cyan-500 px-4 py-2 text-sm font-bold text-cyan-950 transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex items-center gap-2 rounded-xl bg-cyan-500 px-3 py-1.5 text-xs font-bold text-cyan-950 transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-50"
         >
           <Play size={17} />
           Resume
@@ -48,7 +48,7 @@ export default function ControlButtons({
           type="button"
           onClick={onPause}
           disabled={!running || mode === 'manual'}
-          className="inline-flex items-center gap-2 rounded-xl bg-amber-400 px-4 py-2 text-sm font-bold text-amber-950 transition hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex items-center gap-2 rounded-xl bg-amber-400 px-3 py-1.5 text-xs font-bold text-amber-950 transition hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-50"
         >
           <Pause size={17} />
           Pause
@@ -59,7 +59,7 @@ export default function ControlButtons({
         type="button"
         onClick={onStep}
         disabled={mode === 'auto' && running && !paused}
-        className="inline-flex items-center gap-2 rounded-xl border border-cyan-500/40 bg-cyan-500/10 px-4 py-2 text-sm font-bold text-cyan-200 transition hover:bg-cyan-500/20 disabled:cursor-not-allowed disabled:opacity-50"
+        className="inline-flex items-center gap-2 rounded-xl border border-cyan-500/40 bg-cyan-500/10 px-3 py-1.5 text-xs font-bold text-cyan-200 transition hover:bg-cyan-500/20 disabled:cursor-not-allowed disabled:opacity-50"
       >
         <SkipForward size={17} />
         Next Step
@@ -69,7 +69,7 @@ export default function ControlButtons({
         type="button"
         onClick={onStop}
         disabled={!running}
-        className="inline-flex items-center gap-2 rounded-xl bg-rose-500 px-4 py-2 text-sm font-bold text-rose-950 transition hover:bg-rose-400 disabled:cursor-not-allowed disabled:opacity-50"
+        className="inline-flex items-center gap-2 rounded-xl bg-rose-500 px-3 py-1.5 text-xs font-bold text-rose-950 transition hover:bg-rose-400 disabled:cursor-not-allowed disabled:opacity-50"
       >
         <Square size={17} />
         Stop
@@ -78,13 +78,13 @@ export default function ControlButtons({
       <button
         type="button"
         onClick={onReset}
-        className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-4 py-2 text-sm font-bold text-slate-100 transition hover:bg-slate-700"
+        className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-3 py-1.5 text-xs font-bold text-slate-100 transition hover:bg-slate-700"
       >
         <RotateCcw size={17} />
         Reset
       </button>
 
-      <label className="flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-300">
+      <label className="flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-2.5 py-1.5 text-xs text-slate-300">
         Mode
         <select
           value={mode}
@@ -96,7 +96,7 @@ export default function ControlButtons({
         </select>
       </label>
 
-      <label className="flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-300">
+      <label className="flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-2.5 py-1.5 text-xs text-slate-300">
         Speed
         <select
           value={speed}
